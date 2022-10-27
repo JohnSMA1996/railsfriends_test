@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @friend %>
+
+<div>
+  <%= link_to "Edit this friend", edit_friend_path(@friend) %>
+  <%= link_to "Back to friends", friends_path %>
+  <%= link_to 'Delete', @friend, method: :delete, data: {confirm: 'Are you sure?'}, class:"btn btn-danger btn_sm" %>
+</div>
